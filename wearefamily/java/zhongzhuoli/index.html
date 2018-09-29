@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+.star-five {
+    width: 0;
+    height: 0;
+    position: relative;
+    border-bottom: 70px solid blue;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    transform: rotate(35deg);
+    -moz-transform: rotate(35deg); /* Firefox */
+    -o-transform: rotate(35deg); /* Opera */
+    -webkit-transform: rotate(35deg); /* Safari and Chrome */
+    -ms-transform: rotate(35deg); /* IE 9 */
+    margin-top: 80px;
+}
+.star-five::before {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -94px;
+    transform: rotate(75deg);
+    -moz-transform: rotate(75deg); /* Firefox */
+    -o-transform: rotate(75deg); /* Opera */
+    -webkit-transform: rotate(75deg); /* Safari and Chrome */
+    -ms-transform: rotate(75deg); /* IE 9 */
+}
+.star-five::after {
+    content: '';
+    width: 0;
+    height: 0;
+    color: blue;
+    border-bottom: 70px solid green;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg); /* Firefox */
+    -o-transform: rotate(-70deg); /* Opera */
+    -webkit-transform: rotate(-70deg); /* Safari and Chrome */
+    -ms-transform: rotate(-70deg); /* IE 9 */
+    position: absolute;
+    left: -100px;
+    top: 0;
+}
+.star-five{
+	
+	transition:all 1s ease;
+	}
+.star-five:hover{
+	transform: translate(200px,200px) rotate(180deg) scale(0.2,0.2) skew(30deg,0deg);
+	}
+</style>
+<title>无标题文档</title>
+</head>
+
+<body>
+<div class="star-five"></div>
+
+</body>
+</html>
